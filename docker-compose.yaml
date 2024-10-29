@@ -1,8 +1,6 @@
 name: primefaces-showcase-8
 services:
   tomcat-server:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: ghcr.io/albercl/primefaces-showcase:latest
     ports:
       - "8080:8080"
